@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 90 20% 98%;
+    --foreground: 150 18% 12%;
+    --card: 0 0% 100%;
+    --card-foreground: 150 18% 12%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 150 18% 12%;
+    --primary: 152 64% 28%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 90 18% 94%;
+    --secondary-foreground: 150 18% 16%;
+    --muted: 90 14% 94%;
+    --muted-foreground: 150 8% 40%;
+    --accent: 36 92% 95%;
+    --accent-foreground: 28 70% 28%;
+    --destructive: 0 72% 48%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 90 12% 88%;
+    --input: 90 12% 88%;
+    --ring: 152 64% 28%;
+    --brand: 152 64% 28%;
+    --brand-foreground: 0 0% 100%;
+    --brand-muted: 152 40% 92%;
+    --radius: 0.9rem;
+  }
+
+  .theme-merchant,
+  .theme-admin {
+    --background: 90 20% 98%;
+    --foreground: 150 18% 12%;
+    --card: 0 0% 100%;
+    --card-foreground: 150 18% 12%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 150 18% 12%;
+    --primary: 152 64% 28%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 90 18% 94%;
+    --secondary-foreground: 150 18% 16%;
+    --muted: 90 14% 94%;
+    --muted-foreground: 150 8% 40%;
+    --accent: 36 92% 95%;
+    --accent-foreground: 28 70% 28%;
+    --destructive: 0 72% 48%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 90 12% 88%;
+    --input: 90 12% 88%;
+    --ring: 152 64% 28%;
+    --brand: 152 64% 28%;
+    --brand-foreground: 0 0% 100%;
+    --brand-muted: 152 40% 92%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+
+  :focus-visible {
+    @apply outline-none ring-2 ring-ring ring-offset-2 ring-offset-background;
+  }
+}
+
+@layer utilities {
+  .page-wrap {
+    @apply mx-auto w-full max-w-6xl px-4 sm:px-6;
+  }
+}
